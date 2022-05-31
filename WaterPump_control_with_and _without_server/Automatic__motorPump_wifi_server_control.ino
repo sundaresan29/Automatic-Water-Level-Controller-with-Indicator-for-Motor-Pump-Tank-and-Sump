@@ -9,7 +9,7 @@
 
 // Replace with your network credentials
 const char* ssid = "NSIC-TSC Motor Server";
-const char* password = "ntscmotorroom@2022";
+const char* password = "XXXXXXXXXXXXXXX";
 
 const char* PARAM_INPUT_1 = "output";
 const char* PARAM_INPUT_2 = "state";
