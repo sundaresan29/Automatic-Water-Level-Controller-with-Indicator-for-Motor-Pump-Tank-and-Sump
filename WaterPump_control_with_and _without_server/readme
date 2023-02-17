@@ -1,0 +1,16 @@
+The above code is for an Automatic Water Level Controller with Indicator for Motor Pump Tank and Sump that can work with and without a server. 
+I used an ESP32 board to act as a local server in server mode to control the motor pump for the tank and sump. 
+I also included a reset button to turn off the motors and reset the system.
+
+In the code I used the following libraries:
+WiFi.h: allows the ESP32 to connect to a Wi-Fi network and create a soft access point.
+AsyncTCP.h: a lightweight TCP/IP stack implementation that is used to connect to the server.
+ESPAsyncWebServer.h: a web server library for the ESP32.
+
+The program initializes various pins as input and output pins and connects to a Wi-Fi network using the SSID and password. 
+The IP address of the local server is printed on the serial monitor. 
+The main part of the program creates a web page using HTML and JavaScript that allows users to control the motor pump for the tank and sump. 
+The page includes a switch for each motor that is connected to a digital output pin, and the state of each switch is sent to the server as a GET request. 
+The program uses the output state function to check the state of each output pin and set the switch accordingly.
+I also included a processor function that replaces a placeholder in the web page with the switch sections created by the button state function. 
+The reset button is connected to digital pin 15 and is also controlled using a switch on the web page.
